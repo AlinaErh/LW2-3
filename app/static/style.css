@@ -1,0 +1,330 @@
+.bg_login { background: #e5e3e6;}
+
+body { background: #fff; }
+
+.block_login, .block_login_reg {
+                background-image: url("images/bg.jpg");
+                background-size:cover;
+                border-radius: 10px;
+                position: relative;
+                padding: 15px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.1);
+                font-family: 'Century Gothic';
+}
+.block_login { height: 500px; width: 500px;}
+.block_login_reg { height: 540px; width: 590px;}
+
+.login_title{
+        font-family: Poppins-Bold;
+        font-size: 30px;
+        color: #252e49;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        font-family: 'Century Gothic';
+}
+
+.block1 {
+            display: inline-block;
+            width: 140px;
+            vertical-align: top;
+}
+
+.block2 {
+            display: inline-block;
+            font-size: 14px;
+}
+
+input[type=submit] {
+                        color: #000000;
+                        background-color: #d6dbe9;
+                        border: none;
+                        border-radius: 25px;
+                        padding: 8 27px;
+                        font-family: Poppins-Regular;
+                        font-size: 15px;
+                        color: #252e49;
+                        margin-left: 5px;
+                        cursor: pointer;
+                        outline: none;
+                        font-family: 'Century Gothic';
+}
+input[type=submit]:hover { background: #bdc3d3; }
+
+.block_head {
+            background: #303b44;
+            margin-left: -8px;
+            margin-right: -8px;
+            padding: 5px;
+            color: #303b44;
+            height: 50px;
+}
+
+.head_logo  { background-image: url("images/corgi2.png");}
+
+.head_title {
+                display: inline-block;
+                float: left;
+                margin: 8px 10px 8px 20px;
+                background-size: 50px;
+                background-repeat: no-repeat;
+                padding: 0 0 0 50px;
+                background-position: 0;
+                color: #fff;
+                font-size: 32px;
+                font-weight: bold;
+                font-family: "PT Sans",sans-serif;
+}
+
+.head_a {
+            display: inline-block;
+            font-size: 17px;
+            padding-left: 40px;
+            margin-top: 18px;
+            color: #ea8027;
+}
+
+.head_a a {
+            color: #ea8027;
+            padding-left: 10px;
+            font-family: 'Century Gothic';
+}
+
+.block_index_title {
+                        background-image: url("images/dog.jpg");
+                        height: 650px;
+                        background-size:cover;
+}
+
+.block_user_title {
+                        background-image: url("images/dog_corgi.jpg");
+                        height: 450px;
+                        background-size:cover;
+}
+
+
+.body_index {
+                position: relative;
+	            margin-left: 35px;
+	            margin-right: 35px;
+	            padding-bottom: 15px;
+                background-color: #faf7fe;
+                box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.block_index_title .parent, .block_user_title .parent{
+                                 position: relative;
+                                 z-index: 1;
+                                 width: 600px;
+                                 height: 300px;
+                                 top: 50%;
+                                 left: 50%;
+                                 transform: translate(-50%, -50%);
+}
+.block_index_title .parent .transparent,  .block_user_title .parent .transparent{
+                                 position: absolute;
+                                 z-index: -1;
+                                 background-color: #faf7fe;
+                                 width: 100%;
+                                 height: 100%;
+                                 border-radius: 10px;
+                                 opacity: .5;
+}
+
+.block_index_title .parent .text_index_title,  .block_user_title .parent .text_index_title{
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                position: relative;
+                                                font-family: 'Century Gothic';
+                                                font-weight: 500;
+                                                font-size: 38px;
+                                                text-align: center;
+                                                color: #212c35;
+
+}
+
+.block_main_title {
+                        font-family: 'Century Gothic';
+                        font-weight: 500;
+                        font-size: 35px;
+                        text-align: center;
+                        color: #212c35;
+                        position: relative;
+                        top: 5%;
+                        padding: 20px;
+}
+
+.block_main_img {
+                        background-image: url("images/img_corgi.jpg");
+                        background-size: 450px;
+                        height: 450px;
+                        width: 450px;
+                        display: inline-block;
+                        margin-left: 20px;
+
+}
+
+.block_main_text {
+                        display: inline-block;
+                        height: 450px;
+                        width: 450px;
+                        position: relative;
+}
+.block_main_text p{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 17px;
+                        font-family: 'Century Gothic';
+                        text-align: center;
+                         width: 380px;
+}
+
+
+.block_main_img2 {
+                        background-image: url("images/img_corgi2.jpg");
+                        background-size: 450px;
+                        height: 450px;
+                        width: 450px;
+                        display: inline-block;
+
+}
+.block_profile {
+                    padding: 10px;
+                    color: #212c35;
+                    margin: 0 auto;
+}
+.block_line { font-family: 'Century Gothic'; margin: 10px;}
+.block_line a {color: #ea8027;}
+.left_part {
+                font-weight: bold;
+                display: inline-block;
+                font-size: 25px;
+                width: 250px;
+}
+.right_part {
+                display: inline-block;
+                font-size: 25px;
+}
+
+.profile {
+            position: relative;
+            padding: 20px;
+            width: 100%;
+            height: 500px;
+}
+
+.profile .ttt { margin: 0 auto; color: #212c35; font-family: 'Century Gothic'; position: absolute;}
+
+
+.forum_title {
+                        font-family: 'Century Gothic';
+                        position: relative;
+                        padding-top: 1px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+}
+.forum_title1 {font-size: 35px; font-weight: bold; color: #212c35;}
+.forum_title2 {font-size: 17px;}
+
+.forum_form {
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 20px;
+}
+
+.forum_allposts {
+                    font-family: 'Century Gothic';
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: #212c35;
+
+}
+
+.block_posts {
+                padding-left: 15px;
+                height: 850px;
+                overflow-y: scroll;
+}
+
+.post_user {
+                width: 100px;
+                display: inline-block;
+                position: relative;
+                font-size: 18px;
+}
+.post {
+            width: 700px;
+            height: 50px;
+            background-color: #eeefef;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 13px;
+            display: inline-block;
+            position: relative;
+}
+
+
+.p2 {
+                width: 100%;
+                font-size: 18px;
+}
+.p2 a {
+            color: #ea8027;
+            text-decoration: none;
+            border-bottom: 1.5px solid #ea8027;
+            padding: 2px 10px;
+            margin: 0 20px;
+            font-size: 25px;
+            font-family: 'Century Gothic';
+
+}
+.p2 a:hover { color: #1e3755; border-bottom: 1.5px solid #1e3755;}
+
+.p1 {
+            width: 1000px;
+            min-height: 80px;
+            background-color: #fefdff;
+            padding: 15px;
+            border: 1px solid #303b44;
+            border-radius: 13px;
+            margin: 0 auto;
+}
+.p1 p {
+            font-family: 'Century Gothic';
+            font-style: italic;
+            margin: 0 auto;
+            width: 900px;
+            text-align: justify;
+            padding: 15px;
+}
+
+.forum_title_form { background-color: #f0f0f0; border-bottom: 1px solid #dad9d9;}
+
+form {
+        font-size: 15px;
+        font-family: 'Century Gothic';
+
+}
+
+
+.text_map {
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 17px;
+            font-family: 'Century Gothic';
+}
+
+#map {
+        width: 700px;
+        height: 400px;
+        margin-left: 20px;
+        margin-top: 20px;
+        outline: 1px solid #212c35;
+}

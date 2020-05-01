@@ -1,0 +1,33 @@
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body class="bg_login">
+        <div class="block_login">
+            <h1 class="login_title">Вход</h1>
+            <form action="" method="post">
+                    {{ form.hidden_tag() }}
+                    <div>
+                        <div class="block1">{{ form.username.label }}</div>
+                        <div class="block2">{{ form.username(size=32) }}</div>
+                    </div>
+                    <br>
+                    {% for error in form.username.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    <div class="block_parent">
+                        <div class="block1">{{ form.password.label }}</div>
+                        <div class="block2">{{ form.password(size=32) }}<br>{{ form.remember_me() }} {{ form.remember_me.label }}</div>
+                    </div>
+                    <br>
+                    {% for error in form.password.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    <center>
+                        <p>
+                        <input type="submit" value="Войти"></p>
+                    </center>
+            </form>
+            <center><p>У вас ещё нет аккаунта? <a href="{{ url_for('register') }}" style="color: #ea8027";>Зарегистрироваться</a></p></center>
+        </div>
+    </body>

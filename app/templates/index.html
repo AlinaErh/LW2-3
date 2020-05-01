@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="body_index">
+        <div class="forum_title_form">
+        <div class="forum_title">
+                <p class="forum_title1">Форум любителей вельш корги</p>
+                <p class="forum_title2">Форум создан для того, чтобы получить больше информации о замечательной
+                    пароде вельш корги из уст счастливых владельцев данной пароды собак. Здесь вы можете поделиться
+                    информацией о своем питомце, а также прочитать записи других пользователей.</p>
+        </div>
+
+        <div class="forum_form">
+            <form action="" method="post">
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.post.label }}<br>
+                    {{ form.post(cols=80, rows=7) }}<br>
+                    {% for error in form.post.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </p>
+                <p>{{ form.submit() }}</p>
+            </form>
+        </div>
+         </div>
+        <center><p class="forum_allposts">Записи форума</p></center>
+
+        <div class="block_posts">
+            {% for post in posts %}
+            <p>{% include '_post.html' %}</p>
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}

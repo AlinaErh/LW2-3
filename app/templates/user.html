@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="body_index">
+        <div class="block_user_title">
+            <div class="parent">
+                <div class="transparent"></div>
+                <div class="text_index_title">Профиль пользователя </div>
+            </div>
+        </div>
+        <div class="block_profile">
+             <div class="block_line">
+                   <div class="left_part">Имя:</div>
+                   <div class="right_part">{{ user.username }}</div>
+             </div>
+             <div class="block_line">
+                   <div class="left left_part">Порода питомца:</div>
+                   <div class="right_part">{{ user.breed }}</div>
+             </div>
+             <div class="block_line">
+                   <div class="left_part part">Кличка питомца:</div>
+                   <div class="right_part">{{ user.petname }}</div>
+             </div>
+             <div class="block_line">
+                   <div class="left left_part">Email:</div>
+                   <div class="right_part">{{ user.email }}</div>
+             </div>
+             <div class="block_line"><a href="{{ url_for('edit_profile') }}">Редактировать профиль</a></div>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <!-- Подключение API -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='map.js') }}"></script>
+    </head>
+    <body>
+        <div class="block_head">
+            <div class="head_logo head_title" >Dom Corgi</div>
+            <div class="head_a">
+                <a href="{{ url_for('main') }}">Главная</a>
+                <a href="{{ url_for('index') }}">Форум</a>
+                <a href="{{ url_for('user', username=current_user.username) }}">Профиль</a>
+                <a href="{{ url_for('logout') }}">Выйти</a>
+            </div>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>
